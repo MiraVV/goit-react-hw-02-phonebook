@@ -6,12 +6,7 @@ export const Filter = ({ value, onChange }) => {
   return (
     <FilterContainer>
       <FilterName>Find contacts by name</FilterName>
-      <FilterInput
-        type="text"
-        value={value}
-        name="filter"
-        onChange={onChange}
-      />
+      <FilterInput type="text" name={value} onChange={onChange} />
     </FilterContainer>
   );
 };

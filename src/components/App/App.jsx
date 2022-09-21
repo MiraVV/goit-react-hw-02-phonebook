@@ -73,7 +73,7 @@ class App extends Component {
         <h1>Phonebook</h1>
         <Form onSubmit={addContact} />
         <h1>Contacts</h1>
-        <Filter name="filter" onChange={handleChange} />
+        <Filter value="filter" onChange={handleChange} />
         <ListContact items={contacts} removeContact={removeContact} />
       </Wrapper>
     );
